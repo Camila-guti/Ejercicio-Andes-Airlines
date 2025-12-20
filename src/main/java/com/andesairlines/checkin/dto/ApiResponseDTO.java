@@ -1,16 +1,25 @@
 package com.andesairlines.checkin.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class ApiResponseDTO<T> {
 
     private int code;
     private T data;
+    private String errors;
+
+    
+    public ApiResponseDTO(int code, T data) {
+        this.code = code;
+        this.data = data;
+    }
+
+    
+    public ApiResponseDTO(int code, String errors) {
+        this.code = code;
+        this.errors = errors;
+    }
 }
