@@ -1,13 +1,10 @@
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
 
 COPY . .
 
-# Dar permisos de ejecución a Maven Wrapper
 RUN chmod +x mvnw
-
-# Construir el proyecto
 RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
