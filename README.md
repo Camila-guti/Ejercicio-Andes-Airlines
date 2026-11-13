@@ -33,7 +33,7 @@ Puedes probar la asignación de asientos del Vuelo 1 aquí:
 
 ---
 
-## 💻 Ejecución Local
+##  Ejecución Local
 
 Para ejecutar la API en tu entorno local conectándote directamente a la base de datos de prueba, sigue estos pasos:
 
